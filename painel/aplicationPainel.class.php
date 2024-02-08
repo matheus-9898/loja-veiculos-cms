@@ -2,8 +2,12 @@
     class aplicationPainel{
         public static function executar(){
 
+            if(isset($_POST['login'])){
+                loginControllerPainel::logar($_POST['usuario'],$_POST['senha']);
+            }
+
             if(isset($_GET['logout'])){
-                session_destroy();
+                painelControllerPainel::logout();
             }
 
             if(isset($_SESSION['login'])){
