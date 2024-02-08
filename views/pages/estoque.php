@@ -8,7 +8,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
@@ -31,7 +31,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
@@ -54,7 +54,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
@@ -77,7 +77,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
@@ -100,7 +100,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
@@ -123,7 +123,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
@@ -146,7 +146,7 @@
                 <span class="material-symbols-outlined antItem">navigate_before</span>
                 <span class="material-symbols-outlined proxItem">navigate_next</span>
                 <ul class="indicadores"></ul>
-                <a href="anuncio.php">
+                <a href="<?= ROOT_PATH ?>anuncio">
                     <div class="sliderItem">
                         <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
 
