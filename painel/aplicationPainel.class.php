@@ -5,6 +5,9 @@
             if(isset($_POST['login'])){
                 loginControllerPainel::logar($_POST['usuario'],$_POST['senha']);
             }
+            if(isset($_POST['addVeic'])){
+                painelControllerPainel::addVeiculo();
+            }
 
             if(isset($_GET['logout'])){
                 painelControllerPainel::logout();

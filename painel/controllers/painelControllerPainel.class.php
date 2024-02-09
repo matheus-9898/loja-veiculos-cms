@@ -6,5 +6,8 @@
         public static function logout(){
             painelModelPainel::logout();
         }
+        public static function addVeiculo(){
+            painelModelPainel::addVeiculo();
+        }
     }
 ?>
