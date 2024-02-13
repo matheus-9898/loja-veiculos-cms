@@ -12,10 +12,12 @@
             if(isset($_GET['logout'])){
                 painelControllerPainel::logout();
             }
+            if(isset($_GET['delVeiculo'])){
+                painelControllerPainel::delVeiculo();
+            }
 
             if(isset($_SESSION['login'])){//se logado
                 painelControllerPainel::executar();
-                painelControllerPainel::listaVeiculos();
             }else{//se não logado
                 loginControllerPainel::executar();
             }

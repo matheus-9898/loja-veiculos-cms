@@ -14,6 +14,7 @@
     spl_autoload_register('autoloadPainel');
     
     define('ROOT_PATH_PAINEL','http://localhost/projetos/loja-veiculos-cms/painel/');
+    define('ROOT_PATH','http://localhost/projetos/loja-veiculos-cms/');
 
     date_default_timezone_set('America/Sao_Paulo');
 

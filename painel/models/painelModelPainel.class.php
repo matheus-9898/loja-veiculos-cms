@@ -17,5 +17,11 @@
             $info = $sql->fetchAll(PDO::FETCH_ASSOC);
             return $info;
         }
+        public static function delVeiculo(){
+            $sql = mysqlModelPainel::conexaoBD()->prepare('DELETE FROM veiculos WHERE id=?');
+            $sql->execute(array($_GET['delVeiculo']));
+            header('Location: '.ROOT_PATH_PAINEL);
+            die();
+        }
     }
 ?>
