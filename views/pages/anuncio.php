@@ -46,12 +46,20 @@
             </div>
 
             <div class="divEsq">
-                <img src="views/imagens/carro.jpg" alt="Imagem principal" id="imagemPrincipal" class="miniatura">
+                <?php 
+                    $fotos = explode('/',$dadosAnuncio[0]['fotos']);
+                ?>
+                <img src="views/imagens/anuncios/<?= $fotos[0] ?>" alt="Imagem principal" id="imagemPrincipal" class="miniatura">
                 <div class="contMiniaturas">
-                    <img src="views/imagens/carro2.jpg" alt="Miniatura" class="miniatura">
-                    <img src="views/imagens/carro3.jpg" alt="Miniatura" class="miniatura">
-                    <img src="views/imagens/carro4.jpg" alt="Miniatura" class="miniatura">
-                    <img src="views/imagens/carro5.jpg" alt="Miniatura" class="miniatura">
+                    <?php 
+                        for($i=1; $i < count($fotos); $i++){
+                            if($fotos[$i] != null){
+                    ?>
+                        <img src="views/imagens/anuncios/<?= $fotos[$i] ?>" alt="Miniatura" class="miniatura">
+                    <?php 
+                            }
+                        }
+                    ?>
                 </div>
                 <h2>Contatos:</h2>
                 <div class="contContatosAnuncio">
@@ -64,44 +72,40 @@
                 <div class="contSociais"></div>
             </div>
             <div class="divDir">
-                <h1 class="tituloPagAnunc">VOLKSWAGEN AMAROK</h1>
-                <h2 class="subtituloPagAnunc">2.0 HIGHLINE 4X4 CD 16V TURBO INTERCOOLER DIESEL 4P MANUAL</h2>
+                <h1 class="tituloPagAnunc"><?= $dadosAnuncio[0]['marca-modelo'] ?></h1>
+                <h2 class="subtituloPagAnunc"><?= $dadosAnuncio[0]['desc-modelo'] ?></h2>
                 <div class="precoPagAnunc">
-                    <h2>R$ 60.000,00</h2>
+                    <h2>R$ <?= $dadosAnuncio[0]['valor'] ?>,00</h2>
                 </div>
                 <div class="desc1PagAnunc">
                     <ul>
-                        <li><strong>Ano:</strong> 2016/2017</li>
-                        <li><strong>Cor:</strong> preto</li>
-                        <li><strong>Combustível:</strong> Flex</li>
-                        <li><strong>Único dono:</strong> Não</li>
-                        <li><strong>Km:</strong> 76.000</li>
-                        <li><strong>Portas:</strong> 2</li>
-                        <li><strong>Final da Placa:</strong> ...301</li>
+                        <li><strong>Ano: </strong><?= $dadosAnuncio[0]['ano'] ?></li>
+                        <li><strong>Cor: </strong><?= $dadosAnuncio[0]['cor'] ?></li>
+                        <li><strong>Combustível: </strong><?= $dadosAnuncio[0]['combustivel'] ?></li>
+                        <li><strong>Único dono: </strong><?= $dadosAnuncio[0]['unico-dono'] ?></li>
+                        <li><strong>Km: </strong><?= $dadosAnuncio[0]['km'] ?></li>
+                        <li><strong>Portas: </strong><?= $dadosAnuncio[0]['quant-portas'] ?></li>
+                        <li><strong>Final da Placa: </strong>...<?= $dadosAnuncio[0]['final-placa'] ?></li>
                     </ul>
                 </div>
                 <hr>
                 <div class="opcionaisPagAnunc">
                     <h2>Opcionais</h2>
                     <ul>
-                        <li><span class="material-symbols-outlined">task_alt</span> Airbag motorista</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Airbag passageiro</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Alarme</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Ar-condicionado</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Ar-quente</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Direção hidráulica</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Kit multimídia</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Rodas de liga leve</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Travas elétricas</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Trio elétrico</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Vidro elétrico</li>
-                        <li><span class="material-symbols-outlined">task_alt</span> Volante com regulagem</li>
+                        <?php 
+                            $opcionais = explode('/',$dadosAnuncio[0]['opcionais']);
+                            foreach ($opcionais as $key => $value) {
+                        ?>
+                            <li><span class="material-symbols-outlined">task_alt</span> <?= $value ?></li>
+                        <?php 
+                            }
+                        ?>
                     </ul>
                 </div>
                 <hr>
                 <div class="desc2PagAnunc">
                     <h2>Descrição</h2>
-                    <p>SAVEIRO CROSS</p>
+                    <p><?= $dadosAnuncio[0]['descricao'] ?></p>
                 </div>
             </div>
         </div>
