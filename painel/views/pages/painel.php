@@ -21,7 +21,7 @@
             <div id="contVeiculos">
                 <div class="contAddVeic">
                     <h2>Adicionar veículo</h2>
-                    <form action="<?= ROOT_PATH_PAINEL ?>" method="post">
+                    <form action="<?= ROOT_PATH_PAINEL ?>" method="post" enctype="multipart/form-data">
                         <input type="text" placeholder="Marca Modelo" name="marca-modelo">
                         <input type="text" placeholder="Descrição do modelo" name="desc-modelo">
                         <input type="number" placeholder="Valor" name="valor">
@@ -38,7 +38,7 @@
                             <option value="0">Não destacar</option>
                             <option value="1">Destacar</option>
                         </select>
-                        <input type="file" multiple placeholder="Fotos" name="fotos">
+                        <input type="file" placeholder="Fotos" name="fotos[]" multiple>
                         <div class="contSubmit">
                             <input type="submit" value="Adicionar" name="addVeic">
                         </div>

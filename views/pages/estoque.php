@@ -16,11 +16,16 @@
                     <ul class="indicadores"></ul>
                     <a href="<?= ROOT_PATH.'anuncio?id='.$value['id'] ?>" target="_blank">
                         <div class="sliderItem">
-                            <div class="slideItem"><img class="imgItem" src="views/imagens/carro.jpg" alt="veículo"></div>
-
-                            <div class="slideItem"><img class="imgItem" src="views/imagens/carro2.jpg" alt="veículo"></div>
-                            
-                            <div class="slideItem"><img class="imgItem" src="views/imagens/carro3.jpg" alt="veículo"></div>
+                            <?php 
+                                $fotos = explode('/',$value['fotos']);
+                                foreach($fotos as $key => $fotosValue){
+                                    if($fotosValue != null){
+                            ?>
+                                <div class="slideItem"><img class="imgItem" src="views/imagens/anuncios/<?= $fotosValue ?>" alt="veículo"></div>
+                            <?php 
+                                    }
+                                }
+                            ?>
                         </div>
                         <div class="detalhesItem">
                             <h2 class="tituloItem"><?= $value['marca-modelo'] ?></h2>
