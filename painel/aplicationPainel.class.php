@@ -13,9 +13,10 @@
                 painelControllerPainel::logout();
             }
 
-            if(isset($_SESSION['login'])){
+            if(isset($_SESSION['login'])){//se logado
                 painelControllerPainel::executar();
-            }else{
+                painelControllerPainel::listaVeiculos();
+            }else{//se não logado
                 loginControllerPainel::executar();
             }
         }

@@ -142,3 +142,17 @@ main .centerMain #contVeiculos .contAddVeic form .contSubmit{
     display: flex;
     justify-content: center;
 }
+
+main .centerMain #contVeiculos .contListaVeiculos table{
+    width: 100%;
+}
+main .centerMain #contVeiculos .contListaVeiculos table th,
+main .centerMain #contVeiculos .contListaVeiculos table td{
+    text-align: center;
+    line-height: 1.5;
+}
+main .centerMain #contVeiculos .contListaVeiculos table .colBt{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}

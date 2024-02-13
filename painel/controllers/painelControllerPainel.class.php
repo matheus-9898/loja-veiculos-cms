@@ -9,5 +9,8 @@
         public static function addVeiculo(){
             painelModelPainel::addVeiculo();
         }
+        public static function listaVeiculos(){
+            return painelModelPainel::listaVeiculos();
+        }
     }
 ?>
