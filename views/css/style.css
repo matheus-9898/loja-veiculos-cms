@@ -912,11 +912,15 @@ h2 {
 /* .contConteudo>.centerConteudo>.contEstoque> */
 .itemAnuncio>a>.sliderItem>.slideItem {
     display: inline-block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* .contConteudo>.centerConteudo>.contEstoque> */
 .itemAnuncio>a>.sliderItem>.slideItem>.imgItem {
-    width: 100%;
+    height: 100%;
 }
 
 /* .contConteudo>.centerConteudo>.contEstoque> */

@@ -28,7 +28,7 @@ main{
     gap: 30px;
 }
 main h1{
-    color: cornflowerblue;
+    color: #3b434a;
 }
 main .formLogin{
     width: 100%;
@@ -44,7 +44,7 @@ main .formLogin input{
 main .formLogin input[type=submit]{
     width: fit-content;
     padding: 10px 20px;
-    background-color: cornflowerblue;
+    background-color: #4485ba;
     border: 0px;
     color: white;
     font-weight: 600;

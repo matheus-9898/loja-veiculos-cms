@@ -19,7 +19,7 @@ select:focus{
     outline: 0px;
 }
 input[type=submit]{
-    background-color: #2271b1;
+    background-color: #4485ba;
     color: white;
     font-weight: 600;
     border: 0px;
@@ -28,12 +28,13 @@ input[type=submit]{
 }
 
 header{
-    background-color: #2271b1;
+    background-color: #3b434a;
     padding: 0 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    border-bottom: 3px solid #4485ba;
 }
 header .centerHeader{
     max-width: 1000px;
@@ -55,7 +56,7 @@ header .centerHeader a{
     justify-content: center;
 }
 header .centerHeader a:hover{
-    background-color: rgb(76, 118, 196);
+    background-color: #4485ba;
 }
 
 main{
@@ -73,11 +74,11 @@ main .centerMain #contVeiculos{
     gap: 20px;
 }
 main .centerMain #contVeiculos > div{
-    border: 1px solid #2271b1;
+    border: 1px solid #4485ba;
     border-radius: 5px;
 }
 main .centerMain #contVeiculos > div h2{
-    background-color: #2271b1;
+    background-color: #4485ba;
     color: white;
     padding: 3px 8px;
     font-weight: 600;

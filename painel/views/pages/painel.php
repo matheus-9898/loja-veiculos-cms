@@ -54,7 +54,6 @@
                     <table>
                         <tr>
                             <th>Marca - Modelo</th>
-                            <th>Descrição modelo</th>
                             <th>Ano</th>
                             <th>Cor</th>
                             <th>Final da placa</th>
@@ -67,7 +66,6 @@
                         ?>
                         <tr>
                             <td><?= $value['marca-modelo'] ?></td>
-                            <td><?= $value['desc-modelo'] ?></td>
                             <td><?= $value['ano'] ?></td>
                             <td><?= $value['cor'] ?></td>
                             <td><?= $value['final-placa'] ?></td>
