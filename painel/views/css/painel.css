@@ -8,14 +8,16 @@ a{
     text-decoration: none;
 }
 input,
-select{
+select,
+textarea{
     padding: 3px;
     border-radius: 5px;
     border: 1px solid grey;
     min-width: 0px;
 }
 input:focus,
-select:focus{
+select:focus,
+textarea:focus{
     outline: 0px;
 }
 input[type=submit]{
@@ -66,18 +68,20 @@ main{
 main .centerMain{
     max-width: 1000px;
     margin: 0 auto;
-    height: 400px;
 }
-main .centerMain #contVeiculos{
+main .centerMain #contVeiculos,
+main .centerMain{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-main .centerMain #contVeiculos > div{
+main .centerMain #contVeiculos > div,
+main .centerMain #contOutros{
     border: 1px solid #4485ba;
     border-radius: 5px;
 }
-main .centerMain #contVeiculos > div h2{
+main .centerMain #contVeiculos > div h2,
+main .centerMain #contOutros h2{
     background-color: #4485ba;
     color: white;
     padding: 3px 8px;
@@ -156,4 +160,70 @@ main .centerMain #contVeiculos .contListaVeiculos table .colBt{
     display: flex;
     gap: 15px;
     justify-content: center;
+}
+
+main .centerMain #contOutros form{
+    padding: 8px;
+    display: grid;
+    gap: 7px;
+    grid-template-areas: 'contNumZap contTelCont contEmail'
+    'contEnd contEnd contCidade'
+    'contSobre contSobre contSobre'
+    'contLinkInsta contLinkFace contLinkTiktok'
+    'contSobreImg contAtend2a6a contAtendSab'
+    'contSubmit contSubmit contSubmit';
+}
+main .centerMain #contOutros form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+main .centerMain #contOutros form .contNumZap{
+    grid-area: contNumZap;
+}
+main .centerMain #contOutros form .contTelCont{
+    grid-area: contTelCont;
+}
+main .centerMain #contOutros form .contEmail{
+    grid-area: contEmail;
+}
+main .centerMain #contOutros form .contEnd{
+    grid-area: contEnd;
+}
+main .centerMain #contOutros form .contCidade{
+    grid-area: contCidade;
+}
+main .centerMain #contOutros form .contAtend2a6a{
+    grid-area: contAtend2a6a;
+}
+main .centerMain #contOutros form .contAtendSab{
+    grid-area: contAtendSab;
+}
+main .centerMain #contOutros form .contSobre{
+    grid-area: contSobre;
+}
+main .centerMain #contOutros form .contSobreImg{
+    grid-area: contSobreImg;
+}
+main .centerMain #contOutros form .contLinkInsta{
+    grid-area: contLinkInsta;
+}
+main .centerMain #contOutros form .contLinkFace{
+    grid-area: contLinkFace;
+}
+main .centerMain #contOutros form .contLinkTiktok{
+    grid-area: contLinkTiktok;
+}
+main .centerMain #contOutros form .contSubmit{
+    grid-area: contSubmit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .centerMain #contOutros form textarea{
+    resize: vertical;
+}
+main .centerMain #contOutros form .contSubmit input{
+    width: fit-content;
 }

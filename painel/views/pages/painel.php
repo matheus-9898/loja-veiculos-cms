@@ -11,7 +11,7 @@
         <nav class="centerHeader">
             <div>
                 <a href="#contVeiculos">Veículos</a>
-                <a href="#contOutros">Outros</a>
+                <a href="#contOutros">Informações</a>
             </div>
             <a href="<?= ROOT_PATH_PAINEL ?>?logout">Sair</a>
         </nav>
@@ -101,7 +101,60 @@
                 </div>
             </div>
             <div id="contOutros">
-
+                <h2>Informações</h2>
+                <form action="<?= ROOT_PATH_PAINEL ?>" method="post" enctype="multipart/form-data">
+                    <div class="contNumZap">
+                        <label for="numZap">Whatsapp:</label>
+                        <input type="number" id="numZap" name="numZap">
+                    </div>
+                    <div class="contTelCont">
+                        <label for="telCont">Telefone de contato:</label>
+                        <input type="number" id="telCont" name="telCont">
+                    </div>
+                    <div class="contEmail">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="contEnd">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" id="endereco" name="endereco">
+                    </div>
+                    <div class="contCidade">
+                        <label for="cidade">Cidade - Estado:</label>
+                        <input type="text" id="cidade" name="cidade">
+                    </div>
+                    <div class="contAtend2a6a">
+                        <label for="atend2a6a">Atendimento(2ª a 6ª):</label>
+                        <input type="text" id="atend2a6a" name="atend2a6a">
+                    </div>
+                    <div class="contAtendSab">
+                        <label for="atendSab">Atendimento(sábado):</label>
+                        <input type="text" id="atendSab" name="atendSab">
+                    </div>
+                    <div class="contLinkInsta">
+                        <label for="linkInsta">Instagram:</label>
+                        <input type="text" id="linkInsta" name="linkInsta">
+                    </div>
+                    <div class="contLinkFace">
+                        <label for="linkFace">Facebook:</label>
+                        <input type="text" id="linkFace" name="linkFace">
+                    </div>
+                    <div class="contLinkTiktok">
+                        <label for="linkTiktok">Tiktok:</label>
+                        <input type="text" id="linkTiktok" name="linkTiktok">
+                    </div>
+                    <div class="contSobre">
+                        <label for="sobre">Sobre:</label>
+                        <textarea id="sobre" cols="30" rows="3" name="sobre"></textarea>
+                    </div>
+                    <div class="contSobreImg">
+                        <label for="sobreImg">Imagem(sobre):</label>
+                        <input type="file" id="sobreImg" name="sobreImg">
+                    </div>
+                    <div class="contSubmit">
+                        <input type="submit" value="Salvar" name="formOutros">
+                    </div>
+                </form>
             </div>
         </div>
     </main>
