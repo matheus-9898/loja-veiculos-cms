@@ -8,6 +8,9 @@
             if(isset($_POST['addVeic'])){
                 painelControllerPainel::addVeiculo();
             }
+            if(isset($_POST['formInfo'])){
+                painelControllerPainel::setInformacoes();
+            }
 
             if(isset($_GET['logout'])){
                 painelControllerPainel::logout();
