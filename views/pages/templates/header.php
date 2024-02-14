@@ -21,9 +21,9 @@
                     <span class="material-symbols-outlined" id="closeMenu">close</span>
                 </div>
                 <div id="contRedesMS">
-                    <a href="https://www.instagram.com/interautomultimarcas/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                    <a href="https://www.facebook.com/interautomultimarcasveiculos" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                    <a href="https://www.tiktok.com/@interautomultimarcas" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['instagram'] ?>" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['facebook'] ?>" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['tiktok'] ?>" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
                 </div>
                 <nav id="contLista">
                     <ul>
@@ -40,9 +40,9 @@
             <div id="centerCabSup">
                 <a href="<?= ROOT_PATH ?>"><img src="views/imagens/logo.jpg" alt="Logo"></a>
                 <div id="contRedesSociais">
-                    <a href="https://www.instagram.com/interautomultimarcas/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                    <a href="https://www.facebook.com/interautomultimarcasveiculos" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                    <a href="https://www.tiktok.com/@interautomultimarcas" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['instagram'] ?>" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['facebook'] ?>" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['tiktok'] ?>" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
                 </div>
                 <span class="material-symbols-outlined">menu</span>
             </div>
@@ -74,9 +74,9 @@
                     </ul>
                 </nav>
                 <div id="contRSociaisMS">
-                    <a href="https://www.instagram.com/interautomultimarcas/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                    <a href="https://www.facebook.com/interautomultimarcasveiculos" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
-                    <a href="https://www.tiktok.com/@interautomultimarcas" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['instagram'] ?>" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['facebook'] ?>" target="_blank"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                    <a href="<?= $getInformacoes['tiktok'] ?>" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
                 </div>
                 <span class="material-symbols-outlined">menu</span>
             </div>

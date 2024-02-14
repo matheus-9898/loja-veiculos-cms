@@ -2,17 +2,17 @@
         <div id="centerRodape">
             <div id="contDadosRodape">
                 <div id="end">
-                    <h2>Jundiaí - SP</h2>
-                    <p class="txtLighter">Av. Dr Odil Campos de Saes, 492 - Vianelo</p>
+                    <h2><?= $getInformacoes['cidade'] ?></h2>
+                    <p class="txtLighter"><?= $getInformacoes['endereco'] ?></p>
                 </div>
                 <div id="atendimento">
                     <h2>Atendimento:</h2>
-                    <p class="txtLighter">Segunda à sexta: 8h às 18h</p>
-                    <p class="txtLighter">Sábado: 8h às 12h</p>
+                    <p class="txtLighter">Segunda à sexta: <?= $getInformacoes['atendimento_2a6a'] ?></p>
+                    <p class="txtLighter">Sábado: <?= $getInformacoes['atendimento_sab'] ?></p>
                 </div>
                 <div id="tels">
-                    <h2>(11) 94709-5020</h2>
-                    <h2>(11) 4087-4131</h2>
+                    <h2><?= $getInformacoes['whatsapp'] ?></h2>
+                    <h2><?= $getInformacoes['tel_cont'] ?></h2>
                 </div>
                 <div id="autobig">
                     <h2 class="txtLighter">Estamos no:</h2>

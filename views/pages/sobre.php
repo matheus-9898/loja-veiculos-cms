@@ -4,8 +4,8 @@
             <h1>A empresa</h1>
         </div>
         <div class="contSobre">
-            <img src="views/imagens/a-empresa.jpg" alt="A empresa">
-            <p>A Interauto Multimarcas é uma loja de veículos em Jundiaí. Temos o carro ideal para você.</p>
+            <img src="views/imagens/<?= $getInformacoes['imagem_sobre'] ?>" alt="A empresa">
+            <p><?= $getInformacoes['sobre'] ?></p>
         </div>
     </div>
 </main>

@@ -1,4 +1,4 @@
-<main class="contConteudo">        
+<main class="contConteudo">  
     <div class="centerConteudo">
         <div class="tituloPag">
             <h1>Contato</h1>
@@ -28,17 +28,17 @@
                 <div class="tituloDadosContato">
                     <h2>Telefone</h2>
                 </div>
-                <span><i class="fa-solid fa-phone" style="color: #666;"></i> (11) 4087-4131
+                <span><i class="fa-solid fa-phone" style="color: #666;"></i> <?= $getInformacoes['tel_cont'] ?>
                 </span>
-                <span><i class="fa-brands fa-whatsapp" style="color: #666;"></i> (11) 94709-5020</span>
+                <span><i class="fa-brands fa-whatsapp" style="color: #666;"></i> <?= $getInformacoes['whatsapp'] ?></span>
                 <div class="tituloDadosContato">
                     <h2>E-mail</h2>
                 </div>
-                <span><i class="fa-regular fa-envelope" style="color: #666;"></i> interautomultimarcas@mail.com.br</span>
+                <span><i class="fa-regular fa-envelope" style="color: #666;"></i> <?= $getInformacoes['email'] ?></span>
                 <div class="tituloDadosContato">
                     <h2>Endereço</h2>
                 </div>
-                <span><span class="material-symbols-outlined">location_on</span>Avenida Dr Odil Campos de Saes, 492 - Vianelo - Jundiaí - SP</span>
+                <span><span class="material-symbols-outlined">location_on</span><?= $getInformacoes['endereco'].' - '.$getInformacoes['cidade'] ?></span>
             </div>
         </div>
     </div>
