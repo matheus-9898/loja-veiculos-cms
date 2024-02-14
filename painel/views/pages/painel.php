@@ -10,8 +10,8 @@
     <header>
         <nav class="centerHeader">
             <div>
-                <a href="#contVeiculos">Veículos</a>
-                <a href="#contOutros">Informações</a>
+                <a id="btVeiculos" class="btSelected">Veículos</a>
+                <a id="btOutros">Informações</a>
             </div>
             <a href="<?= ROOT_PATH_PAINEL ?>?logout">Sair</a>
         </nav>
@@ -159,5 +159,7 @@
             </div>
         </div>
     </main>
+    <script src="views/js/jquery.js"></script>
+    <script src="views/js/script.js"></script>
 </body>
 </html>
