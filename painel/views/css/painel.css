@@ -28,6 +28,9 @@ input[type=submit]{
     padding: 5px 10px;
     cursor: pointer;
 }
+label{
+    font-weight: 600;
+}
 
 header{
     background-color: #3b434a;
@@ -86,7 +89,7 @@ main .centerMain #contOutros h2{
     color: white;
     padding: 3px 8px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -165,7 +168,7 @@ main .centerMain #contVeiculos .contListaVeiculos table .colBt{
 main .centerMain #contOutros form{
     padding: 8px;
     display: grid;
-    gap: 7px;
+    gap: 13px;
     grid-template-areas: 'contNumZap contTelCont contEmail'
     'contEnd contEnd contCidade'
     'contSobre contSobre contSobre'
