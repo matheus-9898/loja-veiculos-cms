@@ -16,6 +16,9 @@
             if(isset($_GET['delVeiculo'])){
                 veiculosControllerPainel::delVeiculo();
             }
+            if(isset($_GET['destaque']) && isset($_GET['id'])){
+                veiculosControllerPainel::alterarDestaque();
+            }
 
             if(isset($_POST['formInfo'])){
                 informacoesControllerPainel::setInformacoes();

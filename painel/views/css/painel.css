@@ -41,6 +41,21 @@ label{
 .btSelected{
     background-color: #4485ba;
 }
+.btDestaque{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    border: 1px solid darkgray;
+    background-color: rgb(240,240,240);
+    position: relative;
+}
+.btDestaque > svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 header{
     background-color: #3b434a;

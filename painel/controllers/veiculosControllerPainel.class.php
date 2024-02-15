@@ -16,5 +16,8 @@
         public static function delVeiculo(){
             veiculosModelPainel::delVeiculo();
         }
+        public static function alterarDestaque(){
+            veiculosModelPainel::alterarDestaque();
+        }
     }
 ?>

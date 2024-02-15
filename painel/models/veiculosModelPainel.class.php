@@ -31,5 +31,11 @@
             header('Location: '.ROOT_PATH_PAINEL.'veiculos');
             die();
         }
+        public static function alterarDestaque(){
+            $sql = mysqlModelPainel::conexaoBD()->prepare('UPDATE veiculos SET destaque=? WHERE id=?');
+            $sql->execute(array($_GET['destaque'],$_GET['id']));
+            header('Location: '.ROOT_PATH_PAINEL.'veiculos');
+            die();
+        }
     }
 ?>
