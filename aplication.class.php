@@ -4,6 +4,9 @@
             if(isset($_GET['id'])){
                 anuncioController::dadosAnuncio($_GET['id']);
             }
+            if(isset($_POST['formContato'])){
+                contatoController::inputMensagem();
+            }
 
             $url = isset($_GET['url']) ? explode('/',$_GET['url'])[0] : 'home';
             $url .= 'Controller';

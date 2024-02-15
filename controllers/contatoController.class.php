@@ -6,5 +6,8 @@
         public static function getInformacoes(){
             return informacoesModel::getInformacoes();
         }
+        public static function inputMensagem(){
+            contatoModel::inputMensagem();
+        }
     }
 ?>

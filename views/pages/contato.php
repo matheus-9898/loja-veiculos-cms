@@ -8,7 +8,7 @@
                 <div class="tituloFormContato">
                     <h2>Envie um e-mail</h2>
                 </div>
-                <form>
+                <form action="<?= ROOT_PATH ?>" method="post">
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" placeholder="Seu Nome" required>
 
@@ -21,7 +21,7 @@
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" placeholder="Mensagem" required></textarea>
 
-                    <input type="submit" value="Enviar" name="acao">
+                    <input type="submit" value="Enviar" name="formContato">
                 </form>
             </div>
             <div class="dadosContato">
