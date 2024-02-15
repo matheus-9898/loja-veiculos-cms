@@ -258,17 +258,18 @@ main .centerMain #contOutros form .contSubmit input{
 }
 
 #contMensagens table{
-    padding: 10px;
+    border-collapse: collapse;
+}
+#contMensagens table th{
+    line-height: 2 !important;
 }
 #contMensagens table td{
-    border: none;
-}
-#contMensagens table .colMensagem p{
-    margin: 10px 0 10px 7px;
+    border-top: 1px solid rgba(0, 0, 0, 0.267);
 }
 #contMensagens table .colMensagem{
-    max-width: 300px;
+    max-width: 350px;
 }
-.msgNaoLida{
-    background-color: #4485ba42;
+#contMensagens table .colMensagem p{
+    padding: 10px 5px 10px 15px;
+    text-align: left;
 }
