@@ -38,9 +38,6 @@ label{
 #btVeiculos{
     cursor: pointer;
 }
-.btSelected{
-    background-color: #4485ba;
-}
 
 header{
     background-color: #3b434a;
@@ -174,9 +171,6 @@ main .centerMain #contVeiculos .contListaVeiculos table .colBt{
     display: flex;
     gap: 15px;
     justify-content: center;
-}
-main .centerMain #contOutros{
-    display: none;
 }
 main .centerMain #contOutros form{
     padding: 8px;
