@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <h1>Login | Controle de estoque</h1>
+        <h1>Login</h1>
         <form action="<?= ROOT_PATH_PAINEL ?>" method="post" class="formLogin">
             <input type="text" placeholder="Usuário" name="usuario">
             <input type="password" placeholder="Senha" name="senha">
