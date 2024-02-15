@@ -38,6 +38,9 @@ label{
 #btVeiculos{
     cursor: pointer;
 }
+.btSelected{
+    background-color: #4485ba;
+}
 
 header{
     background-color: #3b434a;
