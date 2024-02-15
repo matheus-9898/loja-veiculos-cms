@@ -34,10 +34,6 @@ input[type=submit]{
 label{
     font-weight: 600;
 }
-#btOutros,
-#btVeiculos{
-    cursor: pointer;
-}
 .btSelected{
     background-color: #4485ba;
 }
@@ -97,20 +93,21 @@ main .centerMain{
     max-width: 1000px;
     margin: 0 auto;
 }
-main .centerMain #contVeiculos,
-main .centerMain{
+main .centerMain #contVeiculos{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 main .centerMain #contVeiculos > div,
-main .centerMain #contOutros{
+main .centerMain #contOutros,
+main .centerMain #contMensagens{
     border: 1px solid #4485ba;
     border-radius: 5px;
     background-color: white;
 }
 main .centerMain #contVeiculos > div h2,
-main .centerMain #contOutros h2{
+main .centerMain #contOutros h2,
+main .centerMain #contMensagens h2{
     background-color: #4485ba;
     color: white;
     padding: 3px 8px;
@@ -177,15 +174,19 @@ main .centerMain #contVeiculos .contAddVeic form .contSubmit{
     justify-content: center;
 }
 
-main .centerMain #contVeiculos .contListaVeiculos table{
+main .centerMain #contVeiculos .contListaVeiculos table,
+main .centerMain #contMensagens table{
     width: 100%;
 }
 main .centerMain #contVeiculos .contListaVeiculos table th,
-main .centerMain #contVeiculos .contListaVeiculos table td{
+main .centerMain #contVeiculos .contListaVeiculos table td,
+main .centerMain #contMensagens table th,
+main .centerMain #contMensagens table td{
     text-align: center;
     line-height: 1.5;
 }
-main .centerMain #contVeiculos .contListaVeiculos table .colBt{
+main .centerMain #contVeiculos .contListaVeiculos table .colBt,
+main .centerMain #contMensagens table .colBt{
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -254,4 +255,20 @@ main .centerMain #contOutros form textarea{
 }
 main .centerMain #contOutros form .contSubmit input{
     width: fit-content;
+}
+
+#contMensagens table{
+    padding: 10px;
+}
+#contMensagens table td{
+    border: none;
+}
+#contMensagens table .colMensagem p{
+    margin: 10px 0 10px 7px;
+}
+#contMensagens table .colMensagem{
+    max-width: 300px;
+}
+.msgNaoLida{
+    background-color: #4485ba42;
 }

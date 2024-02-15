@@ -17,6 +17,10 @@
                 <a href="<?= ROOT_PATH_PAINEL ?>informacoes"
                 class="<?= $fileName == 'informacoes' ? 'btSelected' : '' ?>">
                 Informações</a>
+
+                <a href="<?= ROOT_PATH_PAINEL ?>mensagens"
+                class="<?= $fileName == 'mensagens' ? 'btSelected' : '' ?>">
+                Mensagens</a>
             </div>
             <a href="<?= ROOT_PATH_PAINEL ?>?logout">Sair</a>
         </nav>
