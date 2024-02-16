@@ -8,6 +8,8 @@
         }
         public static function inputMensagem(){
             contatoModel::inputMensagem();
+            header('Location: '.ROOT_PATH.'contato');
+            die();
         }
     }
 ?>
