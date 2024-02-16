@@ -22,8 +22,6 @@
 
             $sql = mysqlModelPainel::conexaoBD()->prepare('UPDATE informacoes SET whatsapp=?,tel_cont=?,email=?,endereco=?,cidade=?,sobre=?,instagram=?,facebook=?,tiktok=?,imagem_sobre=?,atendimento_2a6a=?,atendimento_sab=?');
             $sql->execute(array($_POST['numZap'],$_POST['telCont'],$_POST['email'],$_POST['endereco'],$_POST['cidade'],$_POST['sobre'],$_POST['linkInsta'],$_POST['linkFace'],$_POST['linkTiktok'],$imgNameBD,$_POST['atend2a6a'],$_POST['atendSab']));
-            header('Location: '.ROOT_PATH_PAINEL.'informacoes');
-            die();
         }
     }
 ?>

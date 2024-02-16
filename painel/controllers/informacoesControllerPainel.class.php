@@ -13,6 +13,8 @@
         }
         public static function setInformacoes(){
             informacoesModelPainel::setInformacoes();
+            header('Location: '.ROOT_PATH_PAINEL.'informacoes');
+            die();
         }
     }
 ?>
