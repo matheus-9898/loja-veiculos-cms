@@ -1,3 +1,6 @@
+<?php 
+    //echo '<script>$.notify("ok");</script>'
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
