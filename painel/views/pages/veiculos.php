@@ -4,7 +4,7 @@
                     <form action="<?= ROOT_PATH_PAINEL ?>" method="post" enctype="multipart/form-data">
                         <input type="text" placeholder="Marca Modelo" name="marca-modelo">
                         <input type="text" placeholder="Descrição do modelo" name="desc-modelo">
-                        <input type="number" placeholder="Valor" name="valor">
+                        <input type="text" placeholder="Valor" name="valor">
                         <input type="text" placeholder="Ano de fabricação/modelo" name="ano">
                         <input type="text" placeholder="Combustível" name="combustivel">
                         <input type="number" placeholder="Km" name="km">

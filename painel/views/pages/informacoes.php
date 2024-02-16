@@ -3,11 +3,11 @@
                 <form action="<?= ROOT_PATH_PAINEL ?>" method="post" enctype="multipart/form-data">
                     <div class="contNumZap">
                         <label for="numZap">Whatsapp:</label>
-                        <input type="number" id="numZap" name="numZap" value="<?= $getInformacoes['whatsapp'] ?>">
+                        <input type="text" id="numZap" name="numZap" value="<?= $getInformacoes['whatsapp'] ?>" class="inputmask" data-inputmask="'mask': '(99) 9 9999-9999'">
                     </div>
                     <div class="contTelCont">
                         <label for="telCont">Telefone de contato:</label>
-                        <input type="number" id="telCont" name="telCont" value="<?= $getInformacoes['tel_cont'] ?>">
+                        <input type="text" id="telCont" name="telCont" value="<?= $getInformacoes['tel_cont'] ?>"class="inputmask" data-inputmask="'mask': '(99) 9999-9999'">
                     </div>
                     <div class="contEmail">
                         <label for="email">Email:</label>

@@ -1,3 +1,1 @@
 - máscara nos inputs
-
-- apagar imagens ao deletar anúncio
