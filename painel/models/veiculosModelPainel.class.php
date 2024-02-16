@@ -24,6 +24,16 @@
             return $info;
         }
         public static function delVeiculo(){
+            $sql = mysqlModelPainel::conexaoBD()->prepare('SELECT fotos FROM veiculos WHERE id=?');
+            $sql->execute(array($_GET['delVeiculo']));
+            $info = $sql->fetch(PDO::FETCH_ASSOC);
+            $nomesImgs = explode('/',$info['fotos']);
+            $quantImgs = count($nomesImgs)-1;
+
+            for($i=0;$i< $quantImgs;$i++){
+                unlink("../views/imagens/anuncios/$nomesImgs[$i]");
+            }
+
             $sql = mysqlModelPainel::conexaoBD()->prepare('DELETE FROM veiculos WHERE id=?');
             $sql->execute(array($_GET['delVeiculo']));
         }
