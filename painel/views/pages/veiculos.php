@@ -28,7 +28,9 @@
                     <h2>Lista de Veículos</h2>
                     <?php 
                         if(count($listaVeiculos) == 0){
-                            echo 'Não existe veículo cadastrado.';
+                    ?>
+                            <div class="avisoSemVeic">Não existe veículo cadastrado.</div>
+                    <?php
                         }else{
                     ?>
                     <table>
