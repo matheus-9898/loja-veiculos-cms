@@ -8,6 +8,8 @@
 
             if($fileName == 'veiculos' || $fileName == 'informacoes' || $fileName == 'mensagens')
                 include 'pages/templates/footer.php';
+
+            include 'pages/templates/notify.php';
         }
     }
 ?>

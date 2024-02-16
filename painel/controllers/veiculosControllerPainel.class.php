@@ -8,25 +8,53 @@
         }
 
         public static function addVeiculo(){
-            if($_POST['marca-modelo'] != '' && $_POST['desc-modelo'] != '' && $_POST['valor'] != '' && $_POST['ano'] != '' && $_POST['combustivel'] != '' && $_POST['km'] != '' && $_POST['final-placa'] != '' && $_POST['cor'] != '' && $_POST['unico-dono'] != '' && $_POST['quant-portas'] != '' && $_POST['opcionais'] != '' && $_POST['descricao'] != '' && $_POST['destaque'] != '' && $_FILES['fotos']['error'][0] != UPLOAD_ERR_NO_FILE){
-                veiculosModelPainel::addVeiculo();
-                header('Location: '.ROOT_PATH_PAINEL.'veiculos');
-                die();
+            if(trim($_POST['marca-modelo']) != '' && trim($_POST['desc-modelo']) != '' && trim($_POST['valor']) != '' && trim($_POST['ano']) != '' && trim($_POST['combustivel']) != '' && trim($_POST['km']) != '' && trim($_POST['final-placa']) != '' && trim($_POST['cor']) != '' && trim($_POST['unico-dono']) != '' && trim($_POST['quant-portas']) != '' && trim($_POST['opcionais']) != '' && trim($_POST['descricao']) != '' && trim($_POST['destaque']) != '' && $_FILES['fotos']['error'][0] != UPLOAD_ERR_NO_FILE){
+                try{
+                    veiculosModelPainel::addVeiculo();
+                }catch (Exception $e) {     
+                    self::notify('Erro ao adicionar o veículo. Tente novamente.','error');
+                    self::redirect();
+                }
+                self::notify('Veículo adicionado com sucesso.','success');
+                self::redirect();
+                
             }else{
-                header('Location: '.ROOT_PATH_PAINEL.'veiculos');
-                die();
+                self::notify('Dados inválidos ou incompletos.','error');
+                self::redirect();
             }
         }
         public static function listaVeiculos(){
             return array_reverse(veiculosModelPainel::listaVeiculos());
         }
+
         public static function delVeiculo(){
-            veiculosModelPainel::delVeiculo();
-            header('Location: '.ROOT_PATH_PAINEL.'veiculos');
-            die();
+            try {
+                veiculosModelPainel::delVeiculo();
+            } catch (Exception $e) {
+                self::notify('Erro ao deletar veículo. Tente novamente.','error');
+                self::redirect();
+            }
+            self::notify('Veículo deletado com sucesso.','success');
+            self::redirect();
         }
+
         public static function alterarDestaque(){
-            veiculosModelPainel::alterarDestaque();
+            try {
+                veiculosModelPainel::alterarDestaque();
+            } catch (Exception $e) {
+                self::notify('Erro ao alterar destaque. Tente novamente.','error');
+                self::redirect();
+            }
+            self::notify('Destaque alterado com sucesso.','success');
+            self::redirect();
+        }
+
+        private static function notify($msg,$type){
+            $_SESSION['notifyMsg'] = $msg;
+            $_SESSION['notifyType'] = $type;
+        }
+        
+        private static function redirect(){
             header('Location: '.ROOT_PATH_PAINEL.'veiculos');
             die();
         }
