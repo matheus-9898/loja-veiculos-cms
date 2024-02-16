@@ -5,7 +5,7 @@
         }
 
         public static function getMensagens(){
-            return mensagensModelPainel::getMensagens();
+            return array_reverse(mensagensModelPainel::getMensagens());
         }
     }
 ?>

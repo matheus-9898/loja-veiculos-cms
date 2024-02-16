@@ -52,6 +52,11 @@ label{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.avisoSemMsg{
+    line-height: 2;
+    font-weight: 600;
+    text-align: center;
+}
 
 header{
     background-color: #3b434a;
@@ -179,9 +184,7 @@ main .centerMain #contMensagens table{
     width: 100%;
 }
 main .centerMain #contVeiculos .contListaVeiculos table th,
-main .centerMain #contVeiculos .contListaVeiculos table td,
-main .centerMain #contMensagens table th,
-main .centerMain #contMensagens table td{
+main .centerMain #contVeiculos .contListaVeiculos table td{
     text-align: center;
     line-height: 1.5;
 }
@@ -261,15 +264,27 @@ main .centerMain #contOutros form .contSubmit input{
     border-collapse: collapse;
 }
 #contMensagens table th{
-    line-height: 2 !important;
+    line-height: 2;
+    text-align: left;
 }
 #contMensagens table td{
-    border-top: 1px solid rgba(0, 0, 0, 0.267);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    line-height: 1.5;
+}
+#contMensagens table .colDataHora p{
+    font-size: 12px;
+    text-align: center;
+    margin-right: 10px;
+}
+#contMensagens table .colContatos p{
+    font-size: 15px;
+    margin: 10px 0;
 }
 #contMensagens table .colMensagem{
-    max-width: 350px;
+    max-width: 250px;
 }
 #contMensagens table .colMensagem p{
-    padding: 10px 5px 10px 15px;
+    margin: 10px 0;
     text-align: left;
+    font-weight: 600;
 }
