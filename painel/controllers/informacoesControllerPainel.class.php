@@ -19,7 +19,7 @@
                     self::notify('Erro ao alterar as informações. Tente novamente.','error');
                     self::redirect();
                 }
-                self::notify('Destaque alterado com sucesso.','success');
+                self::notify('Informações alteradas com sucesso.','success');
                 self::redirect();
             }else{
                 self::notify('Dados inválidos ou incompletos.','error');
