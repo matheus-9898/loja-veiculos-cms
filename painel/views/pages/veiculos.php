@@ -4,14 +4,14 @@
                     <form action="<?= ROOT_PATH_PAINEL ?>" method="post" enctype="multipart/form-data">
                         <input type="text" placeholder="Marca Modelo" name="marca-modelo">
                         <input type="text" placeholder="Descrição do modelo" name="desc-modelo">
-                        <input type="text" placeholder="Valor" name="valor">
-                        <input type="text" placeholder="Ano de fabricação/modelo" name="ano">
+                        <input type="text" placeholder="Valor" name="valor" class="inputmask" data-inputmask="'mask': 'R$ 999.999,00'">
+                        <input type="text" placeholder="Ano de fabricação/modelo" name="ano" class="inputmask" data-inputmask="'mask': '9999/9999'">
                         <input type="text" placeholder="Combustível" name="combustivel">
-                        <input type="number" placeholder="Km" name="km">
-                        <input type="text" placeholder="Final da placa" name="final-placa">
+                        <input type="text" placeholder="Km" name="km" class="inputmask" data-inputmask="'mask': '999.999 km'">
+                        <input type="text" placeholder="Final da placa" name="final-placa"class="inputmask" data-inputmask="'mask': '999'">
                         <input type="text" placeholder="Cor" name="cor">
                         <input type="text" placeholder="Único dono" name="unico-dono">
-                        <input type="number" placeholder="Quantidade de portas" name="quant-portas">
+                        <input type="text" placeholder="Quantidade de portas" name="quant-portas"class="inputmask" data-inputmask="'mask': '9'">
                         <input type="text" placeholder="Opcionais (separar por /)" name="opcionais">
                         <input type="text" placeholder="Descrição" name="descricao">
                         <select name="destaque">

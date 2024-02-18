@@ -6,6 +6,8 @@
     <script>
         $(document).ready(function(){
             $('.inputmask').inputmask();
+            $('.contAddVeic input[name=km]').inputmask({numericInput: true});
+            $('.contAddVeic input[name=valor]').inputmask({numericInput: true});
         });
     </script>
 </body>
