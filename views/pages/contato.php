@@ -16,7 +16,7 @@
                     <input type="email" name="email" placeholder="Seu E-mail" required>
 
                     <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" placeholder="Seu Telefone" required class="inputmask" data-inputmask="'mask': '(99) 9 9999-9999'">
+                    <input type="tel" name="telefone" placeholder="Seu Telefone" required>
 
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" placeholder="Mensagem" required></textarea>

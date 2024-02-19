@@ -29,11 +29,5 @@
     <script src="views/js/slick.js"></script>
     <script src="views/js/jssocials.js"></script>
     <script src="views/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.inputmask').inputmask();
-        });
-    </script>
 </body>
 </html>
