@@ -30,7 +30,6 @@
                         <li><a href="<?= ROOT_PATH ?>">Página Inicial</a></li>
                         <li><a href="<?= ROOT_PATH ?>sobre">A Empresa</a></li>
                         <li><a href="<?= ROOT_PATH ?>estoque">Estoque</a></li>
-                        <li><a href="<?= ROOT_PATH ?>localizacao">Localização</a></li>
                         <li><a href="<?= ROOT_PATH ?>contato">Contato</a></li>
                     </ul>
                 </nav>
@@ -54,7 +53,6 @@
                         <li><a href="<?= ROOT_PATH ?>">Página Inicial</a></li>
                         <li><a href="<?= ROOT_PATH ?>sobre">A Empresa</a></li>
                         <li><a href="<?= ROOT_PATH ?>estoque">Estoque</a></li>
-                        <li><a href="<?= ROOT_PATH ?>localizacao">Localização</a></li>
                         <li><a href="<?= ROOT_PATH ?>contato">Contato</a></li>
                     </ul>
                 </nav>
@@ -69,7 +67,6 @@
                         <li><a href="<?= ROOT_PATH ?>">Página Inicial</a></li>
                         <li><a href="<?= ROOT_PATH ?>sobre">A Empresa</a></li>
                         <li><a href="<?= ROOT_PATH ?>estoque">Estoque</a></li>
-                        <li><a href="<?= ROOT_PATH ?>localizacao">Localização</a></li>
                         <li><a href="<?= ROOT_PATH ?>contato">Contato</a></li>
                     </ul>
                 </nav>
