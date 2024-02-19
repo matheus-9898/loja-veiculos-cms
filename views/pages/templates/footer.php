@@ -21,7 +21,7 @@
             </div>
             <hr>
             <div id="copyRodape">
-                <span><strong>© 2023 - Todos os direitos reservados</strong></span>
+                <span><strong>Desenvolvido por Matheus Machado</strong></span>
             </div>
         </div>
     </footer>

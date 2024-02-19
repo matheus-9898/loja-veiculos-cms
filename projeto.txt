@@ -1,3 +1,0 @@
-- alterar endereço no maps dinâmicamente(remover página localização)
-
-- alterar site
