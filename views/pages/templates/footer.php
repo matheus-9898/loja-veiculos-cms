@@ -14,14 +14,14 @@
                     <h2><?= $getInformacoes['whatsapp'] ?></h2>
                     <h2><?= $getInformacoes['tel_cont'] ?></h2>
                 </div>
-                <div id="autobig">
+<!--                 <div id="autobig">
                     <h2 class="txtLighter">Estamos no:</h2>
                     <a href="https://www.autobig.com.br/" target="_blanck"><img src="views/imagens/autobig.png" alt="autobig"></a>
-                </div>
+                </div> -->
             </div>
             <hr>
             <div id="copyRodape">
-                <span><strong>© 2023 - Todos os direitos reservados - Interauto Multimarcas</strong></span>
+                <span><strong>© 2023 - Todos os direitos reservados</strong></span>
             </div>
         </div>
     </footer>
