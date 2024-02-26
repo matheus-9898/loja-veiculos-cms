@@ -24,6 +24,9 @@
                 <a href="<?= ROOT_PATH_PAINEL ?>mensagens"
                 class="<?= $fileName == 'mensagens' ? 'btSelected' : '' ?>">
                 Mensagens</a>
+
+                <a href="https://matheusm.online/loja_veiculos_cms/">
+                Ver loja</a>
             </div>
             <a href="<?= ROOT_PATH_PAINEL ?>?logout">Sair</a>
         </nav>
